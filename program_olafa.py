@@ -28,7 +28,7 @@ print("start")
 x = Ulamek()
 x.wprowadz()
 
-dzialanie = raw_input("+lub-")
+dzialanie = raw_input("+lub-lub*")
 
 y = Ulamek()
 y.wprowadz()
@@ -45,6 +45,10 @@ if dzialanie == "+":
 
 if dzialanie == "-":
 	nowy_licznik = (x.licznik*y.mianownik) - (y.licznik*x.mianownik)
+
+if dzialanie == "*":
+	nowy_licznik = x.licznik*y.licznik
+
 	
 wynik = Ulamek(nowy_licznik, wsp_mianownik)
 wynik.skroc()
